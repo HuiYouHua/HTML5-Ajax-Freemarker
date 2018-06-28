@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+ul li{
+    list-style: none;
+
+}
+img{
+    width:100%;
+    display:block;
+}
+
+.search {
+    float:left;
+    height: 10%;
+    width: 100%;
+    margin: 2%;
+    background-color: aquamarine;
+}
+
+/*.search{ float:left;width:100%;background:#eeeeef; height:10%;}*/
+/*.searchg{float:left;width:70%; background:#FFF;border-radius:4px; margin:2%; padding:2%;}*/
+
+.searchg {
+    float:left;
+    height: 100%;
+    width: 80%;
+    background-color: #b2fdff;
+}
+
+.searcha {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.searchb {
+    float: left;
+    width: 80%;
+    background-color: #335fff;
+    align-items: center;
+    height: 100%;
+}
+
+.searchb input {
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.searchc {
+    float: left;
+    width: 10%;
+}
+
+.gcar {
+    float: right;
+    margin-right: 5%;
+    width: 10%;
+}
+
+#produce-label {
+    left: 0;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#produce-label li {
+    float: left;
+    width: 15%;
+    margin: 2% 5%;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+#produce-label li p{
+    margin: 5px 2px;
+    color: #335fff;
+}
+
+#produce-label .selected  {
+    border-bottom: 3px solid #6e76ff;
+}
+
+.area {
+    width: 100%;
+    border-bottom: 3px solid rgba(222, 60, 44, 0.82);
+    float: left;
+}
+
+.content .area:last-child {
+    border-bottom: none;
+}
+
+.area img {
+    width: 35%;
+    margin: 5% 0 5% 5%;
+    float: left;
+
+}
+
+.area div{
+    float: left;
+    width: 60%;
+    text-align: center;
+    height: 100%;
+    padding: 5% 5%;
+    /*margin: auto;*/
+    /*!*display: flex;*!*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.area div p:first-child{
+    color: black;
+}
+
+.area div p:last-child {
+    margin-top: 3%;
+    font-size: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

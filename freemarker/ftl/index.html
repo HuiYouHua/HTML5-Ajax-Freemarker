@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Title</title>
+    <link href="footer.css" rel="stylesheet">
+    <link href="produce.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script>
+    	$(function() {
+    		$('#produce-content .content:first-child').addClass('selected');
+            $('#produce-content .content:gt(0)').css("display","none");
+    	});
+    	
+        function produceSelected(index) {
+            var labelName = "label-"+index;
+            var contentName = "content-"+(index-1);
+            $("#produce-label li").removeClass("selected");
+            $("#produce-label" + " ." + labelName).addClass("selected");
+            $("#produce-content .content").css("display","none");
+            $("#produce-content" + " ." + contentName).css("display","block");
+        }
+    </script>
+</head>
+<body>
+    <h1>Index</h1>
+
+    <div id="produce-label">
+        <ul>
+            <li class="selected label-1" onclick="produceSelected(1)">
+                <img src=http://localhost:8080/freemarker/images/main_13.png>
+                <p>美食推荐11</p>
+            </li>
+            <li class="label-2" onclick="produceSelected(2)">
+                <img src=http://localhost:8080/freemarker/images/main_15.png>
+                <p>饮品休闲11</p>
+            </li>
+            <li class="label-3" onclick="produceSelected(3)">
+                <img src=http://localhost:8080/freemarker/images/main_17.png>
+                <p>酒店住宿11</p>
+            </li>
+            <li class="label-4" onclick="produceSelected(4)">
+                <img src=http://localhost:8080/freemarker/images/main_19.png>
+                <p>电影优惠11</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="produce-content">
+    	
+        <div class="content content-0">
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_26.png>
+                    <div>
+                        <p>保20和30年中疾险11</p>
+                        <p>保终身|百种疾病|可选轻症豁免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content content-1">
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_26.png>
+                    <div>
+                        <p>保20和30年中疾险11</p>
+                        <p>保终身|百种疾病|可选轻症豁免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content content-2">
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_26.png>
+                    <div>
+                        <p>保20和30年中疾险11</p>
+                        <p>保终身|百种疾病|可选轻症豁免</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content content-3">
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_26.png>
+                    <div>
+                        <p>保20和30年中疾险11</p>
+                        <p>保终身|百种疾病|可选轻症豁免</p>
+                    </div>
+                </a>
+            </div>
+            <div class="area">
+                <a href="#">
+                    <img src=http://localhost:8080/freemarker/images/main_29.png>
+                    <div>
+                        <p>成人及儿童终身重疾病12</p>
+                        <p>150种疾病|身故返保费|赠绿通免</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+      
+           
+    </div>
+    <div style="width: 100%; height: 40px; background-color: #335fff; clear: both;"></div>
+    <div style="width: 100%; background-color: #335fff"><input type="button" class="button" value="点我"></div>
+
+
+    <div class="footer-blank"></div>
+    <footer>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="./images/main_70.png"><p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="list.html">
+                    <img src="./images/main_72.png"><p>产品列表</p>
+                </a>
+            </li>
+            <li>
+                <a href="mine.html">
+                    <img src="./images/main_74.png"><p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
